@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>我的履歷</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 自己的 CSS -->
+  <!-- <link rel="stylesheet" href="./css/HW2.css"> -->
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="typeWriter()">
+  <!-- 先裝一個JS函數 -->
+
+  <script>
+    var i = 0;
+    var txt = 'I am Raywen Tsai.';
+    var speed = 100;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("姓名跑出").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+
+  <script>
+    var k = 0;
+    var txt1 = '✎您好，我是蔡睿文，我來自高雄市三民區。我的個性開朗活潑，十分外向。今年有幸進入台灣大學，請多多指教~';
+    var speed1 = 35;
+
+    function typeabout() {
+      if (k < txt1.length) {
+        document.getElementById("關於跑出").innerHTML += txt1.charAt(k);
+        k++;
+        setTimeout(typeabout, speed1);
+      }
+    }
+  </script>
+
+  <!-- 再裝幾個JS函數 -->
+  <script>
+    function setbackfish() {
+      document.body.style.backgroundImage = "url('./img/crab.jpg')";
+    }
+  </script>
+
+  <script>
+    function setbackwood() {
+      document.body.style.backgroundImage = "url('./img/心目.jpg')";
+    }
+  </script>
+
+  <script>
+    function setbackstone() {
+      document.body.style.backgroundImage = "url('./img/dark.jpg')";
+    }
+  </script>
+
+  <script>
+    function setbackfire() {
+      document.body.style.backgroundImage = "url('./img/fire.jpg')";
+    }
+  </script>
+
+  <script>
+    function setbackyellow() {
+      document.body.style.backgroundImage = "url('./img/aaa.jpg')";
+    }
+  </script>
+
+  <script>
+    function setbackbamboo() {
+      document.body.style.backgroundImage = "url('./img/bamboo.jpg')";
+    }
+  </script>
+
+  <!-- 裝完囉 -->
+
+  <header>
+
+    <ul class="導引棒 fixed-top">
+      <li class="導引棒右"><a class="新導引棒正常" href=""><strong>Home</strong></a></li>
+      <li class="導引棒右"><a class="新導引棒正常" href="#welcome"><strong>Welcome</strong></a></li>
+      <li class="導引棒右"><a class="新導引棒正常" href="#about"><strong>About</strong></a></li>
+      <li class="導引棒右"><a class="新導引棒正常" href="#resume"><strong>Resume</strong></a></li>
+      <li class="導引棒右"><a class="新導引棒正常" href="#service"><strong>Service</strong></a></li>
+      <li class="導引棒右"><a class="新導引棒正常" href="#more"><strong>More</strong></a></li>
+    </ul>
+    </div>
+
+  </header>
+
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+
+            <img width="100%" height="100%" fill="#777" src="./img/悲傷.jpg">
+
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-left">
+
+              <strong>
+                <h1 id="姓名跑出" style="color: brown;"></h1>
+                <p style="color: brown;">Contact me</p>
+              </strong>
+
+
+              <div>
+                <p>
+                  <a href="#about"><img src="./img/fb.png_225" width="30px" height="30px" class="淡入效果"
+                      style="border-radius: 8px"></a>
+                  <a href="#resume"><img src="./img/fon2.jpg" width="30px" height="30px" class="淡入效果"
+                      style="border-radius: 8px"></a>
+                  <a href="#about"><img src="./img/line.png" width="30px" height="30px" class="淡入效果"
+                      style="border-radius: 8px"></a>
+                  <a href="#resume"><img src="./img/gm.png" width="30px" height="30px" class="淡入效果"
+                      style="border-radius: 8px"></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+
+            <img width="100%" height="100%" fill="#777" src="./img/nono.jpg">
+
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <strong>
+                <h1 style="color: brown;">I am a Freshman.</h1>
+                <p style="color: brown;">Fisrt year in college!</p>
+              </strong>
+              <p><a class="btn btn-lg btn-primary" href="#resume" role="button">View Resume</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+
+            <img width="100%" height="100%" fill="#777" src="./img/124820554_932059424207498_6634166279208616023_n.jpg">
+
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-right ">
+              <strong>
+                <h1 style="color: brown;">I am a tutor.</h1>
+                <p style="color: brown;"> I teach math and science.</p>
+              </strong>
+
+              <p><a class="btn btn-lg btn-primary" href="#service" role="button">View Service</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+    <!-- ======= 自製Custom Section======= -->
+
+    <section id="welcome">
+      <div class="木頭">
+        <div class="container text-center">
+          <strong>
+            <h2>Welcome</h2>
+          </strong>
+          <p style=" font-size: larger;">
+            Welcome to my page, feel free to play around with the buttons below.
+            <br>
+            <a class="btn btn-lg btn-primary" role="button" onclick="setbackwood()">🌲</a>
+            <a class="btn btn-lg btn-primary" role="button" onclick="setbackyellow()">📒</a>
+            <a class="btn btn-lg btn-primary" role="button" onclick="setbackbamboo()">🎋</a>
+            <a class="btn btn-lg btn-primary" role="button" onclick="setbackstone()">🏰</a>
+            <a class="btn btn-lg btn-primary" role="button" onclick="setbackfire()">🔥</a>
+
+
+
+
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Custom Section End-->
+
+
+    <hr class="featurette-divider">
+
+    <!-- ======= About Section 來自 myresume======= -->
+    <section id="about">
+      <div class="木頭">
+
+        <div class="container">
+
+          <h2><strong>About<a class="btn " role="button" onclick="typeabout()" style="color:red;">Click
+                me!</a></strong></h2>
+          <p style="font-size: larger;" id="關於跑出"></p>
+
+
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="./img/titi.jpg" width="500" height="500" class="img-fluid mx-auto" alt=""
+                style="border-radius: 50%;">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3 style="color: rgb(0, 0, 117);">大學新鮮人&amp; 家教老師</h3>
+
+              <p style="font-size: larger;">目前，我除了是一位大一新生外，也是一名自然科家教老師。我主要傳授高中考試相關課程，
+                輔導高中學生參加學測、指考、以及學科競賽。以下是我的聯絡方式與基本資料。</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="清單">
+                    <li class="清單右"><strong>✎Birthday:</strong> 16 January 2002</li>
+
+                    <li class="清單右"><strong>✎City:</strong> Koushiung, Taiwan</li>
+                    <li class="清單右"><strong>✎Language:</strong>fleunt English and Chinese</li>
+
+
+
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="清單">
+
+                    <li class="清單右"><strong>✎Website:</strong> raywentsai.github.io</li>
+
+                    <li class="清單右" id="line"><strong>✎LineID:</strong> 0905676390</li>
+                    <li class="清單右" id="facebook"><strong>✎Facebook:</strong> Raywentsai</li>
+                  </ul>
+                </div>
+              </div>
+              <p style="font-size: larger;">
+                我的興趣是運動，包括打籃球、打棒球以及游泳。此外，我也對程式語言學習十分有興趣，
+                在台灣大學的第一個學期，我修習兩門程式語言課程( JAVA程式語言與前端網頁語言 )，
+                我目前也在自學Python語言。
+
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- End About Section  -->
+
+
+
+
+    <hr class="featurette-divider">
+
+    <!-- ======= Resume Section 來自 myresume======= -->
+    <section id="resume">
+      <div class="木頭">
+        <div class="container">
+
+          <div>
+            <h2><strong>Resume</strong></h2>
+            <p style="font-size:larger">
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp高中時期，我參與各式各樣的競賽，領域包括語文與自然科學。因此，我對高中課綱及命題模式非常熟悉，可說是掌握了高中學習、考試的要領。
+              我也曾經在兩屆ICHOC化學競賽培訓營( 由臺灣師範大學賈至達教授主辦 )任工作人員與輔導老師，執教經驗相當豐富。</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h3><strong>Summary</strong></h3>
+              <div class>
+                <h4 style="color:rgb(0, 0, 117);">蔡睿文</h4>
+                <p style="font-size: larger; color:seagreen"><em>有活力，有耐心，有足夠學識。您家教的不二選擇。立即連繫我吧!
+                  </em></p>
+                <ul class="清單">
+                  <li class="清單右" style="font-size: larger;">&nbsp&nbsp🏠台北市大安區長興街50號男一舍143室</li>
+                  <li class="清單右" style="font-size: larger;">&nbsp&nbsp📞0905676390</li>
+                  <li class="清單右" style="font-size: larger;">&nbsp&nbsp📬raywentsai@gmail.com</li>
+                </ul>
+              </div>
+
+              <h3><strong>Education</strong></h3>
+              <div>
+                <h4 style="color: rgb(0, 0, 117);">高雄市立高雄高級中學 科學班</h4>
+                <h5>2018 - 2020</h5>
+                <p style="font-size: larger; color:seagreen"><em>高中-總成績全校第三名畢業</em></p>
+                <p style="font-size: larger;">科學班是國家設立的特殊班，目的是培養科學人才。
+                  在這裡，我對自然科學產生濃厚興趣，我的自然科學知識、技能也因而迅速累積，
+                  奠定紮實的基礎。</p>
+              </div>
+              <br>
+              <div>
+                <h4 style="color: rgb(0, 0, 117);">國立台灣大學 醫學系</h4>
+                <h5>2020 - 現在</h5>
+                <p style="font-size: larger; color:seagreen"><em>大學-進修中</em></p>
+                <p style="font-size: larger;">上了大學，我踏入醫學系，接受成為醫師的訓練。
+                  我有幸能進入台大這座知識殿堂、在這裡，我期許自己能向師長、同儕謙卑學習，
+                  有朝一日穿上白袍，回饋社會。</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class><strong>Academic Performance</strong></h3>
+              <div class>
+                <h4 style="color: rgb(0, 0, 117);">Science</h4>
+                <p style="font-size: larger; color:brown"><em>科學素養的勳章 </em></p>
+                <ul class="清單" style="font-size: larger;">
+
+                  <li class="清單右">&nbsp&nbsp🥉鍾靈盃化學競賽個人銅牌</li>
+                  <li class="清單右">&nbsp&nbsp🥉高雄市學科能力競賽化學佳作 </li>
+                  <li class="清單右">&nbsp&nbsp🥈高雄中學學科能力競賽化學優等 </li>
+                  <li class="清單右">&nbsp&nbsp🥈清華盃化學競賽團體銀牌</li>
+                  <li class="清單右">&nbsp&nbsp🥇清華盃化學競賽個人金牌</li>
+                  <li class="清單右">&nbsp&nbsp🥇鍾靈盃化學競賽團體金牌</li>
+                  <li class="清單右">&nbsp&nbsp🥇高雄中學學科能力競賽化學特優 </li>
+                  <li class="清單右">&nbsp&nbsp🥇全國中小學科展高中組大成獎特優 </li>
+                  <li class="清單右">&nbsp&nbsp🥇化學奧林匹亞冬令營一等獎 </li>
+                  <li class="清單右">&nbsp&nbsp🏆物理奧林匹亞初選通過 </li>
+                  <li class="清單右">&nbsp&nbsp🏆生物奧林匹亞初選通過 </li>
+                  <li class="清單右"><strong>&nbsp&nbsp👨‍🏫第二屆暑期化學競賽培訓營工作人員</strong> </li>
+                  <li class="清單右"><strong>&nbsp&nbsp👨‍🏫第三屆暑期化學競賽培訓營輔導老師 </strong></li>
+                </ul>
+              </div>
+              <div class>
+                <h4 style="color: rgb(0, 0, 117);">Language</h4>
+
+                <p style="font-size: larger; color:brown"><em>外語能力的肯定</em></p>
+                <ul class=" 清單" style="font-size: larger;">
+                  <li class="清單右">&nbsp&nbsp📄多益測驗905</li>
+                  <li class="清單右">&nbsp&nbsp🥈108學年度高雄市英文作文比賽全市第二名</li>
+                  <li class="清單右">&nbsp&nbsp🥇高雄中學英文作文比賽第一名</li>
+                  <li class="清單右">&nbsp&nbsp🥇高雄中學英文單字比賽第一名</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    </div>
+    <!-- End Resume Section -->
+
+    <hr class="featurette-divider">
+
+
+    <!-- ======= Services Section ======= -->
+
+    <section id="service">
+      <div class="木頭">
+
+        <div class="container">
+
+          <div>
+            <h2><strong>Service</strong></h2>
+            <p style="font-size: larger;">
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp提供全面性的家教服務，精通高中自然組所有科別，讓您只需一位家教就夠。
+              用簡單易懂的觀念切入，設計適合學生的教學方式，讓學生能夠取得最佳的效果。
+              讓您不僅月考、模擬考成績提升，更能挑戰奧林匹亞競賽、學科能力競賽，並在學測、指考奪得佳績。
+            </p>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+
+              <div>
+                <h4 class="text-center" style="font-size: 5rem;">🆎</h4>
+
+
+                <h4 class="text-center 服"><a href="#service">英文</a></h4>
+                <p>英語是沒有範圍的科目，唯有不斷充實，才可能奪得高分。除了一般的參考書外，我會以我讀過的英文小說、看過的英語影片做為教材，讓學生廣博學習英語。</p>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+
+              <div>
+                <h4 class="text-center" style="font-size: 5rem;">📐</h4>
+
+
+                <h4 class="text-center 服"><a href="#service">數學</a></h4>
+                <p>高中數學難度暴增，需要有條理的學習，才能掌握考試重點。以我豐富的考試經驗，我會明確分析各種題型的出題頻率，讓學生了解學習方向。</p>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+
+              <div>
+
+                <h4 class="text-center" style="font-size: 5rem;">⚙</h4>
+                <h4 class="text-center 服"><a href="#service">物理</a></h4>
+                <p>如同數學，高中物理是決定性的科目，也是許多學生害怕的一科。我會採用各種不同的教學模式、難度，因材施教，讓不同程度的學生都能有所收穫。</p>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+
+              <div>
+                <h4 class="text-center" style="font-size: 5rem;">👨‍🔬</h4>
+                <h4 class="text-center 服"><a href="#service">化學</a></h4>
+                <p>化學是一門背誦的科學，也是我的強項，我會補充大學的化學知識，幫助理解、記憶高中化學的學習要點。</p>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+
+              <div>
+
+                <h4 class="text-center" style="font-size: 5rem;">🐣‍</h4>
+                <h4 class="text-center 服"><a href="#service">生物</a></h4>
+                <p>高中生物題目刁鑽，近年來越來越重視「素養考題」。我會透過閱讀測驗的詳細解說，培養學生生物學素養。</p>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+
+              <div>
+
+                <h4 class="text-center" style="font-size: 5rem;">👨‍🏫‍</h4>
+                <h4 class="text-center 服"><a href="#service">全科</a></h4>
+                <p>我的全科班並不只是各種科目分別授課，而是結合數學、物理以及生物、化學來教學，挑選其中相似、相關之處討論，使學生融會貫通。</p>
+              </div>
+            </div>
+
+
+          </div>
+    </section><!-- End Services Section -->
+    <hr class="featurette-divider">
+
+    <!-- ======= More Section ======= -->
+
+    <section id="more">
+      <div class="木頭">
+
+        <div class="container">
+
+          <div>
+            <h2 class="text-center"><strong>More</strong></h2>
+            <p style="font-size: larger;" class="text-center">
+              為了讓你更認識我，這裡是我的生活影片及作品。
+            </p>
+          </div>
+
+          <div class="row">
+
+
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+
+                <div>
+
+                  <h4 class="text-center " style="color: rgb(0, 0, 117);">生活影片：灌籃</h4>
+                  <p class="text-center ">因為熱愛籃球，家裡有個籃框，看看我灌籃吧</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 ">
+
+                <div>
+                  <h4 class="text-center" style="color: rgb(0, 0, 117);">小作品：抓住那螃蟹</h4>
+                  <p class="text-center">點擊螃蟹，解鎖神秘桌布；點錯要重來呦</p>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+
+                <div>
+
+                  <h4 class="text-center" style="color: rgb(0, 0, 117);">生活照片：參加科學班考試</h4>
+                  <p>
+                    初次接觸正規的實驗室，激起我對科學的興趣
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 text-center">
+
+                <video width="189.54" height="336.96"
+                  style="border: gray; border-radius: 1rem; border-style: groove; border-width: 0.2rem;" controls>
+                  <source src="./img/video-1604409335.mp4" type="video/mp4">
+                </video>
+
+              </div>
+              <div class="魚缸 col-lg-4 col-md-6">
+                <h4 class="" style="font-size: 30px;">
+
+
+                  <a href="#">
+                    <div class="動畫1 導引棒正常">🐟</div>
+                  </a>
+                  <a href="#">
+                    <div class="動畫2 導引棒正常">🐡</div>
+                  </a>
+                  <a href="#"></a>
+                  <div class="動畫3 導引棒正常">🐠</div></a>
+                  <a href="#">
+                    <div class="動畫4 導引棒正常">🦞</div>
+                  </a>
+
+                  <a href="#more"></a>
+                  <div class="動畫5 導引棒正常" role="button" onclick="setbackfish()">🦀</div></a>
+
+                  <a href="#">
+                    <div class="動畫6 導引棒正常">🦑</div>
+                  </a>
+
+                  <!-- 🐳🐬🦈🦐🐋🐡🦪 -->
+                </h4>
+
+              </div>
+
+              <div class="col-lg-4 col-md-6 text-center">
+
+                <img src="./img/IMG_3939.png" width="189.54" height="336.96"
+                  style="border: gray; border-radius: 1rem; border-style: groove; border-width: 0.2rem;">
+
+              </div>
+
+            </div>
+          </div>
+    </section>
+
+    <!-- End More Section -->
+
+
+    <hr class="featurette-divider">
+
+    <div class="container marketing ">
+
+      <!-- Three columns of text below the carousel -->
+      <div id="last">
+        <div class=" row">
+          <div class="col-lg-4">
+            <img src="./img/pic1.jpg" width="300" height="300" style="border-radius: 50%;">
+            <h2 style="font-size: larger;color: seagreen;">營隊主持晚會</h2>
+            <p></p>
+
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/pic2.jpg" width="300" height="300" style="border-radius: 50%;">
+            <h2 style="font-size: larger;color: seagreen;">營隊主持小組討論</h2>
+            <p></p>
+
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/pic3.jpg" width="300" height="300" style="border-radius: 50%;">
+            <h2 style="font-size: larger;color:seagreen;">籃球與我</h2>
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="">
+
+        <footer class="container">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p><a href="https://github.com/raywentsai/raywentsai.github.io">2020 made by Raywen Tsai.</a></p>
+        </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+
+</html>

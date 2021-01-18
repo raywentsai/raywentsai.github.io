@@ -1,0 +1,294 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container {
+    height: 650.16px;
+    /* 90% */
+    width: 1075.2px;
+    /* 70% */
+    margin-left: 15%;
+    position: relative;
+    border: 6px dashed red;
+    overflow: hidden;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: none;
+}
+
+#score_help {
+    text-align: center;
+    font-size: 25px;
+    background-color: #eaeaea;
+}
+
+.plant {
+    position: absolute;
+    height: 18%;
+    left: 0%;
+    width: 16%;
+    background: url('plant.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+
+    animation-name: plant_ani;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes plant_ani {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 1%;
+        height: 17.5%;
+        width: 15.5%;
+    }
+
+
+    100% {
+        left: 0%;
+    }
+}
+
+#plant1 {
+    top: 18%;
+}
+
+#plant2 {
+    top: 38%;
+}
+
+#plant3 {
+    top: 58%;
+}
+
+#plant4 {
+    top: 78%;
+}
+
+.brain {
+    position: absolute;
+    height: 83px;
+    right: 5%;
+    width: 83px;
+    background: url('HDBrainPvZ2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    animation-name: brain_ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#brain1 {
+    top: 21%;
+}
+
+#brain2 {
+    top: 41%;
+}
+
+#brain3 {
+    top: 61%;
+}
+
+#brain4 {
+    top: 81%;
+}
+
+@keyframes brain_ani {
+    0% {
+        height: 83px;
+        width: 83px;
+    }
+
+
+
+    50% {
+        height: 75px;
+        width: 75px;
+    }
+
+
+
+    100% {
+        height: 83px;
+        width: 83px;
+    }
+}
+
+.egg {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    /* background-color: #fff; */
+    background: url('ProjectilePea.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 99;
+    left: 10%;
+}
+
+#egg1 {
+    top: calc(18% + 5%);
+}
+
+#egg2 {
+    top: calc(38% + 5%);
+}
+
+#egg3 {
+    top: calc(58% + 5%);
+}
+
+#egg4 {
+    top: calc(78% + 5%);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url('green-splat-vector-clipart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+    right: 80px;
+}
+
+#bullseye1 {
+    top: calc(18% + 5%);
+}
+
+#bullseye2 {
+    top: calc(38% + 5%);
+}
+
+#bullseye3 {
+    top: calc(58% + 5%);
+}
+
+#bullseye4 {
+    top: calc(78% + 5%);
+}
+
+#floor {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    right: 0%;
+    background-color: #292929;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+}
+
+#zombie {
+    height: 177px;
+    width: 110px;
+    position: absolute;
+    left: 75%;
+    background: url('zombie.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+
+    animation-name: zombie_ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zombie_ani {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+}
+
+@keyframes zombie_shrink_ani {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+
+#restart {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    left: 40%;
+    background-color: indianred;
+    border-radius: 30px;
+    border: 6px dashed red;
+    color: white;
+    top: 40%;
+    font-size: 80px;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#about {
+    position: absolute;
+    height: 32.5px;
+    width: 32.5px;
+    right: 0%;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 3px solid blue;
+    color: blue;
+    top: 0%;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    cursor: auto;
+    z-index: 1000;
+}
+
+#level1 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: calc((100% - 150px) / 2);
+    top: calc((100% - 150px) / 2);
+    background-color: limegreen;
+    border-radius: 75px;
+    border: 6px dashed greenyellow;
+    font-size: 100px;
+    display: none;
+    cursor: none;
+    z-index: 1000;
+}

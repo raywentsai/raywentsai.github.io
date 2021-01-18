@@ -84,7 +84,7 @@ function update_score() {
         speed = 5;
     }
 
-    if (score == 300) {
+    if (score == 200) {
         win_game();
     }
     score_span.text(score);

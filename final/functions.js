@@ -147,7 +147,7 @@ function win_game() {
     setTimeout(function () {
         alert('你已經征服遊戲');
         $("#score_help").css("background-color","red");  
-    }, 250);
+    }, 1000);
 }
         
 function  show_info() {
